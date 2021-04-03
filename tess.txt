@@ -1,0 +1,51 @@
+#include "SpreaderDetector.h"
+
+/**
+ * printing for self yse and testing.
+ * @param person
+ */
+void PrintPerson(Person *person) {
+    printf("name:%s, ID:%l", person->name, person->id);
+}
+
+
+int main(int argc, char** argv) {
+    SpreaderDetector *spr = SpreaderDetectorAlloc();
+    SpreaderDetectorReadPeopleFile(spr, argv[1]);
+    SpreaderDetectorReadMeetingsFile(spr, argv[2]);
+    SpreaderDetectorCalculateInfectionChances(spr);
+    SpreaderDetectorPrintRecommendTreatmentToAll(spr,argv[3]);
+    // free meeting
+    for (size_t k_i = 0; k_i < spr->meeting_size; ++k_i) {
+        MeetingFree(&spr->meetings[k_i]);
+    }
+    // free people
+    for (size_t k_j = 0; k_j < spr->people_size; ++k_j) {
+        PersonFree(&spr->people[k_j]);
+    }
+    SpreaderDetectorFree(&spr);
+    return 0;
+}
+
+
+int main(){
+    SpreaderDetector * SD = SpreaderDetectorAlloc();
+    Person * stav = PersonAlloc(123456789,"Stav", 65, 1);
+    Person * tomer = PersonAlloc( 987654321 ,"Tomer", 65, 0);
+    SpreaderDetectorAddPerson(SD, stav);
+    SpreaderDetectorAddPerson(SD, tomer);
+    for (int ix = 0 ; ix < SD->people_size ; ix++){
+        PrintPerson(SD->people[ix]);
+    }
+    PersonFree(&stav);
+    PersonFree(&tomer);
+}
+
+
+int main(){
+    Person * stav = PersonAlloc(123456789,"Stav", 65, 1);
+	PrintPerson(stav);
+	PersonFree(&stav);
+}
+
+

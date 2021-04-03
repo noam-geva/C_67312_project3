@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/noamg/OneDrive/Desktop/school/2nd_sim/C_Cpp/project_3/Constants.h
+
+/cygdrive/c/Users/noamg/OneDrive/Desktop/school/2nd_sim/C_Cpp/project_3/Meeting.h
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
+Person.h
+/cygdrive/c/Users/noamg/OneDrive/Desktop/school/2nd_sim/C_Cpp/project_3/Person.h
+
+/cygdrive/c/Users/noamg/OneDrive/Desktop/school/2nd_sim/C_Cpp/project_3/Person.h
+Meeting.h
+/cygdrive/c/Users/noamg/OneDrive/Desktop/school/2nd_sim/C_Cpp/project_3/Meeting.h
+
+/cygdrive/c/Users/noamg/OneDrive/Desktop/school/2nd_sim/C_Cpp/project_3/SpreaderDetector.c
+SpreaderDetector.h
+/cygdrive/c/Users/noamg/OneDrive/Desktop/school/2nd_sim/C_Cpp/project_3/SpreaderDetector.h
+
+/cygdrive/c/Users/noamg/OneDrive/Desktop/school/2nd_sim/C_Cpp/project_3/SpreaderDetector.h
+Meeting.h
+/cygdrive/c/Users/noamg/OneDrive/Desktop/school/2nd_sim/C_Cpp/project_3/Meeting.h
+Person.h
+/cygdrive/c/Users/noamg/OneDrive/Desktop/school/2nd_sim/C_Cpp/project_3/Person.h
+Constants.h
+/cygdrive/c/Users/noamg/OneDrive/Desktop/school/2nd_sim/C_Cpp/project_3/Constants.h
+
+/cygdrive/c/Users/noamg/OneDrive/Desktop/school/2nd_sim/C_Cpp/project_3/main.c
+SpreaderDetector.h
+/cygdrive/c/Users/noamg/OneDrive/Desktop/school/2nd_sim/C_Cpp/project_3/SpreaderDetector.h
+
